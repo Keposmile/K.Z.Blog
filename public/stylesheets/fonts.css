@@ -1,0 +1,24 @@
+@font-face {
+  font-family:"FZQKB";
+  src: url("../fonts/方正清刻本悦宋简.ttf");
+}
+@font-face {
+  font-family: "FZLTH";
+  src:url("../fonts/方正兰亭超细黑简体.ttf");
+}
+@font-face {
+  font-family: "HYYLH";
+  src: url("../fonts/汉仪元隆黑-35简.ttf");
+}
+@font-face {
+  font-family: "HYZDX";
+  src: url("../fonts/方正中等线简体.ttf");
+}
+@font-face {
+  font-family: "FZLTQH";
+  src: url("../fonts/方正兰亭纤黑.ttf");
+}
+@font-face {
+  font-family: "FZLTKS";
+  src: url("../fonts/方正兰亭刊宋_GBK.ttf");
+}

@@ -1,0 +1,71 @@
+// out:blog_list_theme_1.css
+@title_font_size:50px;
+@subtitle_font_size:20px;
+@title_font:FZLTQH;
+@title_font_color:#eee;
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+.blog-list-theme-1{
+
+  -webkit-animation-name: fadeIn; /*动画名称*/
+  -webkit-animation-duration: 2s; /*动画持续时间*/
+  -webkit-animation-iteration-count: 1; /*动画次数*/
+  -webkit-animation-delay: 0s; /*延迟时间*/
+
+  width:60%;
+  // display:flex;
+  overflow:hidden;
+  max-height: 500px;
+  margin: 50px auto;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  .blog-list-image{
+    width:100%;
+    margin:0 auto;
+    max-height:500px;
+    overflow: hidden;
+    a{
+      img{
+        width:100%;
+        height: 100%;
+        margin-top: -200px;
+      }
+    }
+
+  }
+  .blog-list-title{
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+    position: relative;
+    width:100%;
+    height:140px;
+    top:-140px;
+    background: linear-gradient(transparent,rgba(0,0,0,0.3));
+    a{
+      text-decoration: none;
+      color: @title_font_color;
+    }
+    .title{
+      padding: 5px 50px;
+      font-size:@title_font_size;
+      font-family: @title_font;
+      margin: 0;
+    }
+    .subtitle{
+      padding: 5px 50px;
+      margin: 0;
+      font-size: @subtitle_font_size;
+      font-family: @title_font;
+    }
+  };
+}

@@ -16,7 +16,7 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 //配置页面图标
-app.use(express.favicon());
+app.use(express.favicon(__dirname + '/public/images/favicon-2.ico'));
 //终端输出简单日志
 app.use(express.logger('dev'));
 
