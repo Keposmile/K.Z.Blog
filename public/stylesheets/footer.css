@@ -1,0 +1,29 @@
+.footer {
+  color: #666;
+  width: 100%;
+  margin: 20px auto;
+  font-size: 10px;
+}
+.footer .foot-divide-line {
+  height: 1px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: rgba(100, 100, 100, 0.1);
+}
+.footer p {
+  margin: 5px 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+.footer p a {
+  color: #666;
+  text-decoration: none;
+}
+.footer p a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.footer p .fa-github:before {
+  font-size: 15px;
+}

@@ -1,19 +1,9 @@
 // out:blog_list_theme_1.css
 @title_font_size:50px;
 @subtitle_font_size:20px;
-@title_font:FZLTQH;
+@title_font1:FZLTQH;
 @title_font_color:#eee;
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0; /*初始状态 透明度为0*/
-    }
-    50% {
-        opacity: 0; /*中间状态 透明度为0*/
-    }
-    100% {
-        opacity: 1; /*结尾状态 透明度为1*/
-    }
-}
+
 .blog-list-theme-1{
 
   -webkit-animation-name: fadeIn; /*动画名称*/
@@ -58,14 +48,14 @@
     .title{
       padding: 5px 50px;
       font-size:@title_font_size;
-      font-family: @title_font;
+      font-family: @title_font1;
       margin: 0;
     }
     .subtitle{
       padding: 5px 50px;
       margin: 0;
       font-size: @subtitle_font_size;
-      font-family: @title_font;
+      font-family: @title_font1;
     }
   };
 }

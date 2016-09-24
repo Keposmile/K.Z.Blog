@@ -1,0 +1,31 @@
+.instructor {
+  -webkit-animation-name: fadeIn;
+  /*动画名称*/
+  -webkit-animation-duration: 1.5s;
+  /*动画持续时间*/
+  -webkit-animation-iteration-count: 1;
+  /*动画次数*/
+  -webkit-animation-delay: 0s;
+  /*延迟时间*/
+  width: 60%;
+  margin: 50px auto;
+  font-family: FZLTQH, FontAwesome;
+  font-size: 15px;
+  text-align: center;
+}
+.instructor ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.instructor ul li {
+  margin: 10px 0;
+  list-style: none;
+}
+.instructor .fa-github {
+  font-size: 17px;
+  color: #333;
+}
+.instructor .fa-github:hover {
+  color: #000;
+}

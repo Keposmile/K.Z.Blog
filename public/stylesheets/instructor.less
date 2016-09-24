@@ -1,0 +1,33 @@
+// out:instructor.css
+@instructor-font-family:FZLTQH,FontAwesome;
+@instructor-font-size:15px;
+
+.instructor{
+  -webkit-animation-name: fadeIn; /*动画名称*/
+  -webkit-animation-duration: 1.5s; /*动画持续时间*/
+  -webkit-animation-iteration-count: 1; /*动画次数*/
+  -webkit-animation-delay: 0s; /*延迟时间*/
+  width:60%;
+  margin:50px auto;
+  font-family:@instructor-font-family;
+  font-size: @instructor-font-size;
+  text-align: center;
+  ul{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    li{
+      margin: 10px 0;
+      list-style: none;
+    }
+  }
+
+  .fa-github{
+    font-size: @instructor-font-size+2px;
+    color:#333;
+  }
+  .fa-github:hover{
+    color: #000;
+    // font-size: @instructor-font-size+3px;
+  }
+}

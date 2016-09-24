@@ -1,0 +1,90 @@
+// out:header.css
+@page-title-font-size-1:90px;
+@page-title-font-size-2:20px;
+@head-image-size:150px;
+@page-title-image-height:400px;
+@header-title-font-family-1:FZLTH;
+@header-title-font-family-2:FZLTQH;
+.page-title-style(@header-font-family,@top,@font-size){
+  color: #ddd;
+  font-family: @header-font-family;
+  font-size:@font-size;
+  position: absolute;
+  display: block;
+  margin-bottom: 0;
+  left: 20%;
+  top:@top;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn; /*动画名称*/
+  -webkit-animation-duration: 1.5s; /*动画持续时间*/
+  -webkit-animation-iteration-count: 1; /*动画次数*/
+  -webkit-animation-delay: 0s; /*延迟时间*/
+}
+.header {
+    width: 100%;
+    overflow: hidden;
+    height: @page-title-image-height;
+    .page-title{
+      h1{
+        .page-title-style(@header-title-font-family-1, @page-title-image-height/3,@page-title-font-size-1);
+      }
+      p{
+        .page-title-style(@header-title-font-family-2, @page-title-image-height - 100px,@page-title-font-size-2);
+      }
+    }
+    .page-title-image{
+      overflow: hidden;
+      &>img {
+          width: 100%;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:@page-title-image-height;
+        opacity: 0.8;
+        background: linear-gradient(transparent,rgba(0, 0, 0, 0.7));
+      }
+    }
+    .page-title-head-image {
+        -webkit-animation-name: fadeIn; /*动画名称*/
+        -webkit-animation-duration: 1.5s; /*动画持续时间*/
+        -webkit-animation-iteration-count: 1; /*动画次数*/
+        -webkit-animation-delay: 0s; /*延迟时间*/
+        position: absolute;
+        width: @head-image-size;
+        height: @head-image-size;
+        top: @page-title-image-height - @head-image-size/2;
+        left: 10%;
+        &>img {
+            width: @head-image-size;
+            height: @head-image-size;
+            border-radius: 75px;
+            border: 3px solid rgba(193, 0, 52, .2);
+            box-shadow: 2px 2px 5px rgba(20, 20, 20,0.5);
+        }
+        .page-title-head-button{
+          position: absolute;
+          width: 100%;
+          top:@head-image-size;
+          &>button{
+            display: block;
+            font-family: FZLTH;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            color: #333;
+            background-color:rgba(230, 230, 230,0.5);
+            width:80%;
+            height: 30px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid rgba(230, 230, 230,0.5);
+            box-shadow:2px 2px 5px rgba(20, 20, 20,0.5);
+          }
+        }
+    }
+}
