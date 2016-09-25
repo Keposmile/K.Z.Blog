@@ -5,9 +5,15 @@ module.exports = function(app){
     console.log("Loading...");
   });
   app.get("/blog",function(req,res){
-    res.send("blog page");
+    res.render("blog");
   });
   app.get("/album",function(req,res){
     res.send("album page");
+  });
+  app.get("/login",function(req,res){
+    res.render("login");
+  });
+  app.get("/edit",function(req,res){
+    res.render("edit");
   });
 };
