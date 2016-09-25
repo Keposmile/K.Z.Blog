@@ -1,0 +1,70 @@
+.editor-div {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.display-area {
+  height: 600px;
+  border: none;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  font-family: FZLTQH;
+  font-weight: bold;
+  padding: 20px;
+}
+.editor {
+  width: 80%;
+  height: 600px;
+  margin: 150px auto;
+}
+.editor .markdown-editor {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 45%;
+}
+.editor .markdown-editor textarea {
+  height: 600px;
+  border: none;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  font-family: FZLTQH;
+  font-weight: bold;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+  resize: none;
+  outline: none;
+}
+.editor .preview {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 600px;
+  border: none;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  font-family: FZLTQH;
+  font-weight: bold;
+  padding: 20px;
+  width: 55%;
+}
+code {
+  color: #f66;
+}

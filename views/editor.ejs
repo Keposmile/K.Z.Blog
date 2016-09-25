@@ -1,0 +1,6 @@
+<div class="editor" id="editor">
+  <div class="markdown-editor">
+    <textarea v-model="input" debounce="300"></textarea>
+  </div>
+  <div v-html="input | marked" class="preview"></div>
+</div>
