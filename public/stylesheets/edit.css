@@ -1,5 +1,22 @@
+.ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.li {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.list-title {
+  color: rgba(246, 246, 246, 0.9);
+  background-color: rgba(52, 52, 52, 0.6);
+  margin: 0;
+  box-sizing: border-box;
+}
 .editor-div {
-  width: 50%;
+  height: 100%;
   margin: 0;
   padding: 0;
   float: left;
@@ -9,21 +26,77 @@
   box-sizing: border-box;
 }
 .display-area {
-  height: 600px;
+  height: 100%;
   border: none;
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.9);
   font-size: 14px;
   font-family: FZLTQH;
   font-weight: bold;
   padding: 20px;
 }
+.editor-mid-block {
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.9);
+  border-bottom: 1px solid rgba(52, 73, 94, 0.3);
+}
 .editor {
-  width: 80%;
-  height: 600px;
-  margin: 150px auto;
+  width: 96.5%;
+  height: 100%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+.editor .blog-list {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+.editor .blog-list ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.editor .blog-list ul li {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.editor .blog-list .sublist li {
+  border-top: 2px solid rgba(246, 246, 246, 0.4);
+  color: rgba(246, 246, 246, 0.9);
+  height: 60px;
+  font-size: 25px;
+  padding: 15px 55px;
+  box-sizing: border-box;
+}
+.editor .blog-list .sublist li:hover {
+  background-color: #40c2d8;
+}
+.editor .blog-list > p {
+  color: rgba(246, 246, 246, 0.9);
+  background-color: rgba(52, 52, 52, 0.6);
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 40px;
+  line-height: 50px;
+  padding: 15px 50px;
+}
+.editor .blog-list > ul > li p {
+  color: rgba(246, 246, 246, 0.9);
+  background-color: rgba(52, 52, 52, 0.6);
+  margin: 0;
+  box-sizing: border-box;
+  border-top: 2px solid rgba(246, 246, 246, 0.4);
+  font-size: 30px;
+  line-height: 40px;
+  padding: 10px 50px;
+}
+.editor .blog-list > ul > li {
+  background-color: rgba(58, 176, 196, 0.3);
 }
 .editor .markdown-editor {
-  width: 50%;
+  height: 100%;
   margin: 0;
   padding: 0;
   float: left;
@@ -31,24 +104,58 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 45%;
+  border-right: 1px solid rgba(52, 73, 94, 0.3);
+  width: 35%;
+}
+.editor .markdown-editor .title {
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.9);
+  border-bottom: 1px solid rgba(52, 73, 94, 0.3);
+  height: 10%;
+}
+.editor .markdown-editor .title .blog-title {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 95%;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  text-indent: 15px;
+}
+.editor .markdown-editor .editor-menu {
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.9);
+  border-bottom: 1px solid rgba(52, 73, 94, 0.3);
+  height: 5%;
+}
+.editor .markdown-editor .editor-menu ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.editor .markdown-editor .editor-menu ul li {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+.editor .markdown-editor .editor-menu ul li p:hover {
+  background-color: #f6f6f6;
 }
 .editor .markdown-editor textarea {
-  height: 600px;
+  height: 100%;
   border: none;
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.9);
   font-size: 14px;
   font-family: FZLTQH;
   font-weight: bold;
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
-  border-right: 1px solid #ccc;
   resize: none;
   outline: none;
 }
 .editor .preview {
-  width: 50%;
   margin: 0;
   padding: 0;
   float: left;
@@ -56,14 +163,14 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 600px;
+  height: 100%;
   border: none;
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.9);
   font-size: 14px;
   font-family: FZLTQH;
   font-weight: bold;
   padding: 20px;
-  width: 55%;
+  width: 45%;
 }
 code {
   color: #f66;

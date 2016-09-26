@@ -2,7 +2,7 @@ $(function(){
   var markdown_editor=new Vue({
     el: '#editor',
     data: {
-      input: '# hello'
+      input: '# Hello, let\'s start'
     },
     filters: {
       marked: marked

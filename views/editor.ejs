@@ -1,6 +1,49 @@
 <div class="editor" id="editor">
+  <div class="blog-list">
+    <p>Article List</p>
+    <ul class="sort">
+      <li>
+        <p>sort1</p>
+        <ul class="sublist">
+          <li>article1</li>
+          <li>article2</li>
+          <li></li>
+        </ul>
+      </li>
+      <li>
+        <p>sort2</p>
+        <ul class="sublist">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
   <div class="markdown-editor">
-    <textarea v-model="input" debounce="300"></textarea>
+    <div class="title">
+      <input class="blog-title" type="text" name="name" placeholder="Enter your title" value="">
+    </div>
+    <div class="editor-menu">
+      <ul>
+        <li>
+          <p></p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+      </ul>
+    </div>
+    <textarea v-model="input"  debounce="300"></textarea>
   </div>
   <div v-html="input | marked" class="preview"></div>
 </div>

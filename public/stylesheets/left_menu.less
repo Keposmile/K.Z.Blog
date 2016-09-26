@@ -1,0 +1,94 @@
+//out:header_left.css
+@page-title-font-size-1:90px;
+@page-title-font-size-2:20px;
+@head-image-size:80px;
+@page-title-image-height:400px;
+@header-title-font-family-1:FZLTH;
+@header-title-font-family-2:FZLTQH;
+@head-position:15px;
+html,body{
+  height: 101%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow: hidden;
+}
+.background-image{
+  overflow: hidden;
+  &>img{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+.ul{
+  width:100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.li{
+  padding: 0;
+  margin: 0;
+  width:100%;
+  height: 40px;
+}
+.left-menu{
+  width: 3.5%;
+  height: 100%;
+  float: left;
+  background-color: #34495e;
+  // z-index: -1;
+  overflow: hidden;
+  // height: @page-title-image-height;
+  .title-head-image {
+      -webkit-animation-name: fadeIn; /*动画名称*/
+      -webkit-animation-duration: 1.5s; /*动画持续时间*/
+      -webkit-animation-iteration-count: 1; /*动画次数*/
+      -webkit-animation-delay: 0s; /*延迟时间*/
+      position: absolute;
+      width: @head-image-size;
+      height: @page-title-image-height;
+      top:0;
+      left:0;
+      &>img {
+          position: relative;
+          top: @head-position;
+          left: @head-position;
+          width: @head-image-size;
+          height: @head-image-size;
+          border-radius: 75px;
+          border: 3px solid rgba(193, 0, 52, .2);
+          box-shadow: 2px 2px 3px rgba(20, 20, 20,0.5);
+      }
+      &>img:hover{
+          box-shadow: 10px 10px 3px rgba(20, 20, 20,0.5);
+      }
+  }
+  .left-menu-list{
+    position: relative;
+    top:@head-image-size*2;
+    ul{
+      .ul;
+      li{
+        .li;
+        border: #34495e;
+        background-color: #34495e;
+        p{
+          width:20%;
+          margin: 0 auto;
+          line-height: 40px;
+          vertical-align: middle;
+          color:#f6f6f6;
+        }
+      }
+      li:hover{
+        background-color: #273747;
+      }
+
+    }
+  }
+
+}

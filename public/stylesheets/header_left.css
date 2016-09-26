@@ -1,0 +1,93 @@
+html,
+body {
+  height: 101%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.background-image {
+  overflow: hidden;
+}
+.background-image > img {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.li {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 40px;
+}
+.left-menu {
+  width: 3.5%;
+  height: 100%;
+  float: left;
+  background-color: #34495e;
+  overflow: hidden;
+}
+.left-menu .title-head-image {
+  -webkit-animation-name: fadeIn;
+  /*动画名称*/
+  -webkit-animation-duration: 1.5s;
+  /*动画持续时间*/
+  -webkit-animation-iteration-count: 1;
+  /*动画次数*/
+  -webkit-animation-delay: 0s;
+  /*延迟时间*/
+  position: absolute;
+  width: 80px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+.left-menu .title-head-image > img {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 75px;
+  border: 3px solid rgba(193, 0, 52, 0.2);
+  box-shadow: 2px 2px 3px rgba(20, 20, 20, 0.5);
+}
+.left-menu .title-head-image > img:hover {
+  box-shadow: 10px 10px 3px rgba(20, 20, 20, 0.5);
+}
+.left-menu .left-menu-list {
+  position: relative;
+  top: 160px;
+}
+.left-menu .left-menu-list ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.left-menu .left-menu-list ul li {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  border: #34495e;
+  background-color: #34495e;
+}
+.left-menu .left-menu-list ul li p {
+  width: 20%;
+  margin: 0 auto;
+  line-height: 40px;
+  vertical-align: middle;
+  color: #f6f6f6;
+}
+.left-menu .left-menu-list ul li:hover {
+  background-color: #273747;
+}
