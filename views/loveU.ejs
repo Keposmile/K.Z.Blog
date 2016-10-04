@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../stylesheets/fonts.css">
+  <link rel="stylesheet" href="../stylesheets/loveU.css">
+  <script type="text/javascript" src="../javascripts/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="../javascripts/vue.js"></script>
+  <script type="text/javascript" src="../javascripts/loveU.js"></script>
+  <title>藏情几许</title>
+</head>
+<body>
+  <div class = "background-img">
+
+    <!-- <img src="../images/left_bg_img.jpg" alt=""> -->
+    <img src="../images/photo-1453230645768-7ecb0653013d.jpg" alt="">
+    <!-- <img src="../images/right_bg_img.jpg" alt=""> -->
+  </div>
+  <div class="container">
+    <div class="head-img">
+      <img class="head head-left" src="../images/left_bg_img.jpg" alt="">
+      <img class="heart" src="../images/heart.png" alt="">
+      <img class="head head-right" src="../images/right_bg_img.jpg" alt="">
+    </div>
+    <h1 class="title">不及错身遇个你，穷尽诗家笔</h1>
+    <div class="time-count" id="my-love-clock">
+      <!-- <p> -->
+        <!-- <span class="years"></span> -->
+        <!-- <span class="months"></span> -->
+        <span class="days">{{days}}Days</span>
+        <span class="hours">{{hours | beautyTime}}Hours</span>
+        <span class="minutes">{{minutes | beautyTime}}Min</span>
+        <span class="seconds">{{seconds | beautyTime}}Sec</span>
+      <!-- </p> -->
+    </div>
+  </div>
+</body>
+</html>
